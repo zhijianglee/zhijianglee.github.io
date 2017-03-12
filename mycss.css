@@ -1,0 +1,21 @@
+.img-circle {
+  background-color: #FF0000;
+  text-align: ;
+  width: 400px;
+  height:400px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 30px;
+  border-left-color: #FA8072;
+  border-right-color:#228B22;
+  border-bottom-color:‎#1E90FF;
+  border-top-color:	#FF0000;
+  border-radius: 50%;
+}
+
+.circular-image {
+  position: center;
+  border-radius:  50%;
+  width: 400px;
+  height:400px;
+}
