@@ -11,9 +11,9 @@ function openMenu(menuname) {
 }
 
 function generate(){
-var size=list.length;
-var index= Math.floor(Math.random() * size);
-document.getElementById("truth_dare_content").innerHTML = list[index];
+  var size=list.length;
+  var index= Math.floor(Math.random() * size);
+  document.getElementById("truth_dare_content").innerHTML = list[index];
 }
 
 function showall(){
@@ -26,4 +26,10 @@ for (var i = 0; i < list.length; i++) {
     listItem.textContent = item;
     ul.appendChild(listItem);
   }
+}
+
+
+function add(){
+    var text= document.getElementById("truth_dare_content").value;
+    list.push(text);
 }
