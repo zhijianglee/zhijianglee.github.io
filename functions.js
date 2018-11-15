@@ -35,17 +35,10 @@ function showinalert(){
   var ul = document.createElement("ul");
 
 for (var i = 0; i < list.length; i++) {
-    var item = list[i];
-    var listItem = document.createElement("li");
-    var fluid_container=document.createElement("div");
-    fluid_container.setAttribute("class","container-fluid")
-    var t= document.createTextNode(item);
-    listItem.setAttribute("class", "list-item");
-    fluid_container.appendChild(t);
-    listItem.appendChild(fluid_container);
-    ul.appendChild(listItem);
+    var item = list[i] +"\n";
   }
    var dialog = document.getElementById('my-alert-dialog');
+   document.getElementById("alert-dialog-content").innerHTML =item;
 }
 
 var createAlertDialog = function() {
@@ -60,6 +53,12 @@ var createAlertDialog = function() {
         dialog.show();
       });
   }
+};
+
+var hideAlertDialog = function() {
+  document
+    .getElementById('my-alert-dialog')
+    .hide();
 };
 
 
