@@ -1,12 +1,12 @@
 var list = [
 "被每一个人弹额",
-"亲一个异性的额头。（不能是男/女朋友/家人）",
+"亲一个异性的额头。",
 "去Gym Room 拿 Dumbell 拉 3 set, 说我是猛男/猛女",
 "拉铁5 set, 然后说我要做猛男",
 "做 Pumping 10 下，屁股坐着异性",
 "被其中一个异性拉ketiak 毛",
 "跑步机快跑 3 分钟，说xxx 我一定要追到你",
-"给任意一个异性挖鼻屎，呵呵，虽然很多人都是象征式的动一下，但是因为是异性所以很有看头哦",
+"给任意一个异性挖鼻屎",
 "大庭广众先大笑3秒，再大哭3秒，重复2到3次",
 "在健身房问一个陌生人，我的屁股/肌肉大吗？",
 "弹皮筋。输的一方任由赢方怎么弹",
@@ -32,14 +32,14 @@ var list = [
 "女生坐男生小腿上，男生做仰卧起坐",
 "Pick your nose in front of everyone",
 "Explain your first sexual intercourse",
-"Let someone in the room write whatever they want from your Facebook account",
+"Let someone in the room write whatever\nthey want from your Facebook account",
 "Smell the foot of the person on your left",
 "Get Slapped by the person on your right",
 "Go outside and do a chicken dance for  5 minutes",
 "Sniff the armpits of everyone in the room.",
 "Let the person to your left draw on your face with a pen",
-"Do push ups until you can’t do any more, wait 5 seconds, and then do one more",
-"Switch clothes with someone of the opposite sex in the group for three rounds",
+"Do push ups until you can’t do any more,\n wait 5 seconds, and then do one more",
+"Switch clothes with someone of the\n opposite sex in the group for three rounds",
 "Take off one piece of your clothing",
 "Get slapped on the face by the person of your choosing",
 "Choose someone from the group to give you a spanking",
@@ -48,10 +48,28 @@ var list = [
 "背起右边第一 个女生",
 "邀请一位异性为你唱情歌，或邀请一位异性与你情歌对唱",
 "对亲脖子",
-"Let the person on your left hold your penis for 1 minute (For boy only)",
+"Let the person on your left hold\n your penis for 1 minute (For boy only)",
 "Who here would you most like to make out with?",
-"Transfer an icecube from your mouth to the person’s mouth on your right.",
+"Transfer an icecube from your mouth\n to the person’s mouth on your right.",
 "Let someone shave part of your body",
-"Take off your underwear and put it on your head. Wear it on your head for the rest of the game",
+"Take off your underwear and put it on your head from now",
 "Seduce a member of the same gender in the group"
 ];
+
+function readfile() {
+  var fs=require ('fs');
+  var readline = require('readline');
+  var stream = require('stream');
+  var instream = fs.createReadStream('./test.txt');
+  var outstream = new stream;
+  var rl = readline.createInterface(instream, outstream)
+  rl.on('line', function(line) {
+    // process line here
+    list.push(line);
+  });
+
+}
+
+function writefile(){
+  fs.writeFile
+}

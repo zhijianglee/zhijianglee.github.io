@@ -23,7 +23,7 @@
     </div>
 
     <style>
-      .modalXl {width: 950px;}
+      .modalXl {width: 700px;}
   </style>
   </head>
 
@@ -60,55 +60,47 @@
         <center><div class="card__content" id="truth_dare_content" style="font-size:20px"></div></center>
       </div>
       <div class="card">
-        <div class="card__content"> <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="generate(null)">Generate</button></div>
+        <div class="card__content"> </div>
       </div>
+      <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="generate(null)">Generate</button>
     </div>
 </div>
 
 
 
 <div id="add" class="menu" style="display:none">
-  <div style="height: 600px; padding: 160px 20px 150px 20px;">
+  <div style="height: 600px; padding: 100px 50px 100px 50px;">
       <center><h1 style="font-size:30px">Add Truth or Dare</h1></center></br>
       <center><p>Add a Tuth or a Dare you Wish</p></center>
     <div class="card">
-        <center><textarea class="textarea" rows="7" columns="5" placeholder="Textarea" id="truth_dare_content"></textarea></center>
+        <center><textarea class="textarea" rows="7" columns="5" placeholder="Textarea" id="truth_dare_content" name="truth_dare_content"></textarea></center>
       <center><div class="card__content" style="font-size:20px"></div></center>
     </div>
-  </div>
-  <div style="height: 600px; padding: 1px 0 0 0;">
-    <div class="card">
-      <div class="card__content"> <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="add(null)">Add</button></div>
-    </div>
+    <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="add(null)">Add</button>
   </div>
 </div>
 
 
-
-  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-      Show List
-  </button> -->
-<div class="modal fade bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content modalXl">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">All The List</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <!-- <h5 class="modal-title" id="exampleModalLongTitle">All The List</h5> -->
         </div>
         <div class="modal-body modalXl">
           <ul class="list">
           </ul>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
+        <!-- <div class="modal-footer">
+        <center> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></center>
+        </div> -->
       </div>
     </div>
   </div>
 
 
 
+
   </body>
+
 </html>
