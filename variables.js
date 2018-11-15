@@ -56,19 +56,11 @@ var list = [
 ];
 
 function readfile() {
-  var fs=require ('fs');
-  var readline = require('readline');
-  var stream = require('stream');
-  var instream = fs.createReadStream('data.txt');
-  var outstream = new stream;
-  var rl = readline.createInterface(instream, outstream)
-  rl.on('line', function(line) {
-    // process line here
-    list.push(line);
-  });
+  var fs=require('fs');
+
 
 }
 
 function writefile(){
-  fs.writeFile
+
 }

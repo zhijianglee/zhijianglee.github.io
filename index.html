@@ -14,7 +14,17 @@
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"> </script>
     <script src="functions.js"></script>
     <script src="variables.js"></script>
+    <script type="text/javascript">
+    <!--
+      if (screen.width <= 799) {
+        document.location = "mob.html";
+      }
 
+      if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+        location.replace("mob.html");
+      }
+      //-->
+    </script>
 
     <meta charset="utf-8">
     <title>Jianggor Truth and Dare Web App</title>
@@ -44,8 +54,8 @@
   </label> -->
 
   <label class="tabbar__item">
-    <!-- <input type="radio" name="tabbar-c" data-toggle="modal" data-target="#exampleModalLong" onclick="showall()"> -->
-    <input type="radio" name="tabbar-c" data-toggle="modal" onclick="openMenu('show')">
+    <input type="radio" name="tabbar-c" data-toggle="modal" data-target="#exampleModalLong" onclick="showall()">
+    <!-- <input type="radio" name="tabbar-c" data-toggle="modal" onclick="openMenu('show')"> -->
         <!-- <input type="radio" name="tabbar-c" data-toggle="modal" onclick="createAlertDialog()"> -->
     <button class="tabbar__button"  >
       <div class="tabbar__label">Show All</div>
@@ -83,23 +93,23 @@
 </div>
 
 
-<div id="show" class="menu" style="display:none">
-  <div class="modal-dialog" role="document">
+<!-- <div id="show" class="menu" style="display:none" >
+  <div class="modal-dialog" role="document" style="width:auto;height:auto">
     <div class="modal-content" style="width:auto;height:auto" >
-      <div class="modal-body">
+      <div class="modal-body" style="width:auto;height:auto">
           <ul class="list-item">
         </ul>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-          <ul>
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="width:auto;height:auto">
+  <div class="modal-dialog modal-lg" role="document" style="width:auto;height:auto">
+    <div class="modal-content" style="width:auto;height:auto">
+      <div class="modal-body" style="width:auto;height:auto">
+          <ul class="list-item">
         </ul>
         </div>
       </div>
@@ -108,10 +118,10 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 
-<template id="alert-dialog.html">
+<!-- <template id="alert-dialog.html">
   <ons-alert-dialog id="my-alert-dialog" modifier="rowfooter">
     <div class="alert-dialog-content">
     </div>
@@ -119,7 +129,7 @@
       <ons-alert-dialog-button onclick="hideAlertDialog()">OK</ons-alert-dialog-button>
     </div>
   </ons-alert-dialog>
-</template>
+</template> -->
 
 
 
