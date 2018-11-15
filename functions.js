@@ -21,7 +21,7 @@ function showall(){
 
 for (var i = 0; i < list.length; i++) {
     var item = list[i];
-    var listItem = document.createElement("li");
+    var listItem = document.createElement("ul");
     listItem.setAttribute("class", "list-item");
     listItem.textContent = item;
     ul.appendChild(listItem);

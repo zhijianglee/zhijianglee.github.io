@@ -43,7 +43,7 @@ var list = [
 "Take off one piece of your clothing",
 "Get slapped on the face by the person of your choosing",
 "Choose someone from the group to give you a spanking",
-"Find the person whose first name has the same letter as your first name or whoever’s first name’s first letter is closest to yours.Now lick their face",
+"Lick the face of the opposite sex player closest to you",
 "男的用胳膊从正面量女的胸围or女的量男的腰围",
 "背起右边第一 个女生",
 "邀请一位异性为你唱情歌，或邀请一位异性与你情歌对唱",
@@ -52,6 +52,6 @@ var list = [
 "Who here would you most like to make out with?",
 "Transfer an icecube from your mouth to the person’s mouth on your right.",
 "Let someone shave part of your body",
-"Go to the bathroom, take off your underwear and put it on your head. Wear it on your head for the rest of the game",
+"Take off your underwear and put it on your head. Wear it on your head for the rest of the game",
 "Seduce a member of the same gender in the group"
 ];
