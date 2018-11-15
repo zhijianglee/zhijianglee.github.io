@@ -54,13 +54,16 @@ var list = [
 "Take off your underwear and put it on your head from now",
 "Seduce a member of the same gender in the group"
 ];
-
+  var fs= require('fs');
 function readfile() {
-  var fs=require('fs');
 
+      var array = fs.readFileSync('data.txt').toString().split("\n");
+      for(i in array) {
+        list.push(array[i]);
+    }
 
 }
 
-function writefile(){
-
+function writefile(s){
+    fs.writeFileSync('data.txt',s);
 }

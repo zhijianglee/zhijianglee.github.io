@@ -63,6 +63,6 @@ var hideAlertDialog = function() {
 
 
 function add(){
-    var text= document.getElementById("truth_dare_content").value;
-    list.push(text);
+    var text= document.getElementById("truth_dare_content").innerHTML;
+    writefile(text);
 }
