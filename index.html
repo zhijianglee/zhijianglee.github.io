@@ -36,15 +36,16 @@
     </button>
   </label>
 
-   <label class="tabbar__item">
+   <!-- <label class="tabbar__item">
     <input type="radio" name="tabbar-c"   onclick="openMenu('add')">
     <button class="tabbar__button" >
       <div class="tabbar__label">Add More Fun</div>
     </button>
-  </label>
+  </label> -->
 
   <label class="tabbar__item">
     <input type="radio" name="tabbar-c" data-toggle="modal" data-target="#exampleModalLong" onclick="showall()">
+        <!-- <input type="radio" name="tabbar-c" data-toggle="modal" onclick="createAlertDialog()"> -->
     <button class="tabbar__button"  >
       <div class="tabbar__label">Show All</div>
     </button>
@@ -59,9 +60,9 @@
       <div class="card">
         <center><div class="card__content" id="truth_dare_content" style="font-size:20px"></div></center>
       </div>
-      <div class="card">
+      <!-- <div class="card">
         <div class="card__content"> </div>
-      </div>
+      </div> -->
       <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="generate(null)">Generate</button>
     </div>
 </div>
@@ -81,23 +82,33 @@
 </div>
 
 
+
+
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content modalXl">
-        <div class="modal-header">
-          <!-- <h5 class="modal-title" id="exampleModalLongTitle">All The List</h5> -->
-        </div>
-        <div class="modal-body">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
           <ul class="list">
-          </ul>
+        </ul>
         </div>
-        <!-- <div class="modal-footer">
-        <center> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></center>
-        </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>
 
+
+<template id="alert-dialog.html">
+  <ons-alert-dialog id="my-alert-dialog" modifier="rowfooter">
+    <div class="alert-dialog-content">
+    </div>
+    <div class="alert-dialog-footer">
+      <ons-alert-dialog-button onclick="hideAlertDialog()">OK</ons-alert-dialog-button>
+    </div>
+  </ons-alert-dialog>
+</template>
 
 
 

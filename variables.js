@@ -15,11 +15,11 @@ var list = [
 "被全部人扇自己耳光/捏脸",
 "用屁股写出自己的名字",
 "被全部人打脚板",
-"男的用胳膊从正面量女的胸围or女的量男的腰围（臀围...）",
+"男的用胳膊从正面量女的胸围or女的量男的腰围",
 "侧抱互相喂酒、喂吃的",
 "和左数第一个异性亲一下",
 "脱一件衣服持续到结束",
-"男： 脱衣说我是猛男，女：摸自己的胸说是时候隆胸了",
+"男:脱衣说我是猛男，女:摸自己的胸说是时候隆胸了",
 "背起右边第一个女生",
 "背起右边第一个男生",
 "和一个异性对换衣服",
@@ -30,10 +30,9 @@ var list = [
 "和左边第一个异性换穿上衣",
 "对窗外大喊“我好寂寞啊",
 "女生坐男生小腿上，男生做仰卧起坐",
-"Pick your nose in front of everyone",
-"Explain your first sexual intercourse",
-"Let someone in the room write whatever\nthey want from your Facebook account",
-"Smell the foot of the person on your left",
+"在每个人面前挖鼻孔",
+"讲你第一次做爱的经历",
+"问你左边玩家的香港脚",
 "Get Slapped by the person on your right",
 "Go outside and do a chicken dance for  5 minutes",
 "Sniff the armpits of everyone in the room.",
@@ -60,7 +59,7 @@ function readfile() {
   var fs=require ('fs');
   var readline = require('readline');
   var stream = require('stream');
-  var instream = fs.createReadStream('./test.txt');
+  var instream = fs.createReadStream('data.txt');
   var outstream = new stream;
   var rl = readline.createInterface(instream, outstream)
   rl.on('line', function(line) {
