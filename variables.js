@@ -54,7 +54,10 @@ var list = [
 "Take off your underwear and put it on your head from now",
 "Seduce a member of the same gender in the group"
 ];
-  var fs= require('fs');
+
+const fs = require('fs');
+
+
 function readfile() {
 
       var array = fs.readFileSync('data.txt').toString().split("\n");
