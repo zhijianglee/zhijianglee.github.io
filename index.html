@@ -46,12 +46,12 @@
     </button>
   </label>
 
-   <!-- <label class="tabbar__item">
+   <label class="tabbar__item">
     <input type="radio" name="tabbar-c"   onclick="openMenu('add')">
     <button class="tabbar__button" >
       <div class="tabbar__label">Add More Fun</div>
     </button>
-  </label> -->
+  </label>
 
   <label class="tabbar__item">
     <input type="radio" name="tabbar-c" data-toggle="modal" data-target="#exampleModalLong" onclick="showall()">
@@ -64,8 +64,6 @@
 </div>
 
 
-
-<div id="play" class="menu">
   <div id="play" class="menu">
       <div style="height: 600px; padding: 100px 50px 100px 50px;">
         <article class="message is-info">
@@ -90,7 +88,7 @@
         <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="generate(null)">Generate</button>
       </div>
   </div>
-</div>
+
 
 
 
@@ -99,10 +97,10 @@
       <center><h1 style="font-size:30px">Add Truth or Dare</h1></center></br>
       <center><p>Add a Tuth or a Dare you Wish</p></center>
     <div class="card">
-        <center><textarea class="textarea" rows="7" columns="5" placeholder="Textarea" id="truth_dare_content" name="truth_dare_content"></textarea></center>
+        <center><textarea class="textarea" rows="7" columns="5" placeholder="Textarea" id="truth_dare_content_add" name="truth_dare_content"></textarea></center>
       <center><div class="card__content" style="font-size:20px"></div></center>
     </div>
-    <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="add(null)">Add</button>
+    <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="insert()">Add</button>
   </div>
 </div>
 
