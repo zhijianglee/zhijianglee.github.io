@@ -73,4 +73,5 @@ function insert () {
   var s=document.getElementById("truth_dare_content_add").value +"";
   var ss=s.toString();
   list.push(ss);
+  document.getElementById("truth_dare_content_add").value="";
 }
