@@ -11,9 +11,18 @@ function openMenu(menuname) {
 }
 
 function generate(){
+  shuffle(list);
   var size=list.length;
   var index= Math.floor(Math.random() * size);
   document.getElementById("truth_dare_content").innerHTML = list[index];
+}
+
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
 }
 
 function showall(){
