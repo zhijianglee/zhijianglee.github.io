@@ -65,19 +65,31 @@
 </div>
 
 
+  <div id="play" class="menu">
+      <div style="height: 600px; padding: 100px 50px 100px 50px;">
+        <article class="message is-info">
+        </center>  <div class="message-header">
+            <center><h1 style="font-size:30px">刺激随机游戏</h1></center>
+          </div></center>
+          <div class="message-body" id="truth_dare_content" style="font-size:20px">
 
-<div id="play" class="menu">
-    <div style="height: 600px; padding: 100px 50px 100px 50px;">
-        <center><h1 style="font-size:30px">刺激随机游戏</h1></center></br>
-      <div class="card">
-        <center><div class="card__content" id="truth_dare_content" style="font-size:20px"></div></center>
-      </div>
+          </div>
+      </article>
+
+          <!-- <center><h1 style="font-size:30px">刺激随机游戏</h1></center></br> -->
+          <!-- <div class="notification is-info" id="truth_dare_content" style="font-size:25px">
+             <button class="delete"></button>
+          </div> -->
+      <!-- <div class="card" style="background-color:#FFA07Aheight:120px">
+          <center><div class="card__content" id="truth_dare_content" style="font-size:20px"></div></center>
+        </div> -->
       <!-- <div class="card">
-        <div class="card__content"> </div>
-      </div> -->
-      <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="generate(null)">Generate</button>
-    </div>
-</div>
+          <div class="card__content"> </div>
+        </div> -->
+        <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="generate(null)">Generate</button>
+      </div>
+  </div>
+
 
 
 
@@ -86,10 +98,10 @@
       <center><h1 style="font-size:30px">Add Truth or Dare</h1></center></br>
       <center><p>Add a Tuth or a Dare you Wish</p></center>
     <div class="card">
-        <center><textarea class="textarea" rows="7" columns="5" placeholder="Textarea" id="truth_dare_content" name="truth_dare_content"></textarea></center>
+        <center><textarea class="textarea" rows="7" columns="5" placeholder="Textarea" id="truth_dare_content_add" name="truth_dare_content"></textarea></center>
       <center><div class="card__content" style="font-size:20px"></div></center>
     </div>
-    <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="add(null)">Add</button>
+    <button class="button--large--cta" style="width: 95%; margin: 0 auto;" onclick="insert()">Add</button>
   </div>
 </div>
 

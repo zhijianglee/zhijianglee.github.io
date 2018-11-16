@@ -54,19 +54,32 @@ var list = [
 "Take off your underwear and put it on your head from now",
 "Seduce a member of the same gender in the group"
 ];
+<<<<<<< HEAD
 
 const fs = require('fs');
 
 
 function readfile() {
+=======
+>>>>>>> e6eeb0015a8691efaf5621e505b6bcd786b8553c
 
-      var array = fs.readFileSync('data.txt').toString().split("\n");
-      for(i in array) {
-        list.push(array[i]);
-    }
+// function readfile() {
+//
+//       var array = fs.readFileSync('data.txt').toString().split("\n");
+//       for(i in array) {
+//         list.push(array[i]);
+//     }
+//
+// }
+//
+// function writefile(s){
+//     fs.writeFileSync('data.txt',s);
+// }
 
-}
 
-function writefile(s){
-    fs.writeFileSync('data.txt',s);
+function insert () {
+  var s=document.getElementById("truth_dare_content_add").value +"";
+  var ss=s.toString();
+  list.push(ss);
+  document.getElementById("truth_dare_content_add").value="";
 }
