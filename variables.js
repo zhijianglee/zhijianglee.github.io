@@ -54,14 +54,6 @@ var list = [
 "Take off your underwear and put it on your head from now",
 "Seduce a member of the same gender in the group"
 ];
-<<<<<<< HEAD
-
-const fs = require('fs');
-
-
-function readfile() {
-=======
->>>>>>> e6eeb0015a8691efaf5621e505b6bcd786b8553c
 
 // function readfile() {
 //
