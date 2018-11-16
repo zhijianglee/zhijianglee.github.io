@@ -55,19 +55,6 @@ var list = [
 "Seduce a member of the same gender in the group"
 ];
 
-// function readfile() {
-//
-//       var array = fs.readFileSync('data.txt').toString().split("\n");
-//       for(i in array) {
-//         list.push(array[i]);
-//     }
-//
-// }
-//
-// function writefile(s){
-//     fs.writeFileSync('data.txt',s);
-// }
-
 
 function insert () {
   var s=document.getElementById("truth_dare_content_add").value +"";
