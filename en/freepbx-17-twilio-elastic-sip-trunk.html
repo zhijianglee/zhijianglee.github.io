@@ -1,0 +1,45 @@
+<!--
+title: Setting Up Twilio Elastic SIP Trunk in FreePBX
+description: Simple Guide on Setting Up Elastic SIP Trunk in FreePBX
+published: true
+date: 2026-01-12T13:37:21.446Z
+tags: twilio, freepbx, siptrunk
+editor: ckeditor
+dateCreated: 2026-01-06T12:35:45.797Z
+-->
+
+<p>&nbsp;It seems my ISP Time has discontinued it's Time Voice App for some time hence it's public network routable SIP IP Address is no longer working since December 2025. The only option is by using ISP provided ONU router which consists of 1 POTS. The VOIP is on separate VLAN and is not public routable. I did attempt to do VLAN tagging like how I did for Unifi, but it does not work for Time. I guess Time has it's own ACL in place. Since then, I was researching on platform that allow me to subscribe for Malaysia DID and Twilio is one of them.&nbsp;</p>
+<p>&nbsp;</p>
+<p>Earlier this year, I topped up my Twilio account with USD 20 to upgrade my account from trial account and bought a Malaysian DID USD 4.99 per month. I will be trying out for a few months to see how it goes, if it worth renewing later by topping up my account again. Here's the catch, the DID doesn't comes with unlimited minutes although you forwarded to VOIP/SIP. I might consider looking for alternatives like Call Centric which slightly higher monthly fees but with unlimited incoming minutes.&nbsp;</p>
+<p>I took quite some hassle trying to get it set up in my existing FreePBX. That includes trial and error on router configurations, reinstalling FreePBX and trying out different FREEPBX alternatives. This is the summary on how Elastic SIP Trunk should be set up in FreePBX.&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><u>Pre-Requisites&nbsp;</u></strong></p>
+<ol>
+  <li>You need to have a Public IP for your internet connection. Ideally a static IP Address</li>
+  <li>Perform port forwarding DST NAT on port 5060 to your FreePBX host.</li>
+  <li>Perform port forwarding DST NAT on port 10000 - 20000 to your FreePBX host.</li>
+  <li>Opening Up firewall for RTP ports (10000-20000)</li>
+  <li>You need to disable fast track connection</li>
+  <li>Disable SIP ALG in your router</li>
+</ol>
+<p><strong><u>Configuration at FreePBX end</u></strong></p>
+<figure class="image"><img src="/屏幕截图_2026-01-06_201518.png"></figure>
+<figure class="image"><img src="/屏幕截图_2026-01-06_201759.png"></figure>
+<p>Username / Auth username : The username and password you configured in your Credential list</p>
+<p>SIP server: Your termination SIP URI which you have created when configure Elastic SIP trunk in Twilio</p>
+<p>&nbsp;</p>
+<p>Under Advance Tab: Only configure DTMF Mode to RFC4733</p>
+<p>For outbound calls to work, you will need a specific outbound route. Ensure you add prefix “+” on each of your dial plan like example below</p>
+<figure class="image"><img src="/屏幕截图_2026-01-12_213501.png"></figure>
+<p>In the above example, you need to dial 88260380008000 if you wish to call +60380008000</p>
+<p><strong><u>At Twilio End</u></strong></p>
+<p>DO REMMEBER TO CONFIGURE THE BELOW</p>
+<ol>
+  <li>Disable Secure Trunking (At least for now, until you got the initial trunk up and running)</li>
+  <li>Enable <strong>Symmetric RTP</strong></li>
+  <li>Setup Termination SIP URI. Under Authentication, ensure you whitelisted your static public IP under <strong>IP Access Control Lists </strong>and attached <strong>Credential Lists. </strong>You can create one on the spot if you have none ready.</li>
+  <li>Under <strong>Origination, </strong>add your static public IP or FQDN as Origination URI. Make sure to begin with “sip:” without the quotations.</li>
+</ol>
+<p>&nbsp;</p>
+<p>I trust this guide is helpful and more straightforward than any guide out there.&nbsp;</p>
+<p>&nbsp;</p>

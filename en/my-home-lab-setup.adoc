@@ -1,0 +1,93 @@
+= Background
+
+I subscribed to 600 Mbps Down and 500 Mbps Up internet packages that came with voip package, where I decided to put them into good use. What I meant by good use is ensure none of the items I am paying for are underutilized. My home lab consits a combinations of switch, routers, access points, refurbished computers and etc. Each of them plays their own role. 
+
+== Internet Services
+
+> Service Provider: Time Internet
+
+> Speed: 600 Mbps Down and 500 Mbps Up
+
+> Came with VOIP Services
+
+=== Implementation
+
+I have ditched ISP provided HG8145X6-10 all in one ONU router and replaced them with a combinations of GPON stick, Mikrotik RB5009 and Asus AX86U. 
+
+The GPON stick (ODI Brand) is plugged into Mikrotik RB5009 and the authentication with OLT is made via the GPON stick itself as shown in the image below. Bascially the information can be easily obtained from the existing ONT
+
+PPOE client is setup in Mikrotik router to obtain internet connection. 
+
+== Servers
+
+=== FreePBX
+
+A refurbished Dell SFF mini PC I bought from my company under Future Makers initiative, where the monies collected will be donated
+
+This serve as my internal VOIP server. There are multiple SIP trunks which connects to multiple service provider which includes Time voip server, Unifi VOIP (parent's house via Wireguard Site to Site VPN), some free to sign up voip providers on the internet. It is also connected to 4G voice gateway where calls to mobile number will be handled by FreePBX as well. 
+
+The advantages form this setup is better call handling and reduction of telemarketing calls where calls will be filtered by IVR, and calls that rings to my extension are legitimate most of the time. On top of that, legitimate callers are rewarded with some cool on-hold music. 
+
+Many providers do charge for Caller ringtone services, however with FreePBX you can do that for FREE ! 
+
+With my current setup, with combination of ditching the ISP provided ONU. I have achieved the below goal. 
+
+> The pair of HG8145X6-10 can be re-used as additional AP for IOT devices 
+
+> There's no need to purchase additional VOIP ATA, because that device can be re-used as well if you know how bridging and routing works. It can be re-configured to connect to your internal VOIP server instead of the ISP one
+
+
+On a side note, providers like TIME, Unifi , or other providers in the market usually refused to give out SIP information including the domain, and authentication credentials. They were extreamly unhelpful, where they will only give one default answer: "Please use the default given ONU" regardless of whatever questions I asked. 
+
+I had figured these out myself and detail information can be obtained in another page in this wiki. (Which will be published later)
+
+==== Docker Containers
+
+Docker is installed in the FreePBX server hosting the below containers
+
+===== wikijs
+
+Which is used to run this blog
+
+===== Adguard
+
+===== nginx
+
+How I able to handle the routing to different docker containers with multiple subdomains with only 1 single public IP. 
+
+===== Gitlab
+
+https://gitlab.jacobnotbiscuit.my/
+
+===== HiEvents
+
+https://events.jacobnotbiscuit.my/
+
+=== Rasberry Pi
+
+A low power Rasberry Pi is responsible on the below services
+
+==== mail server
+==== Pihole
+
+
+=== Homelab Server
+
+A retired desktop PC of mine. 
+
+==== Docker Containers
+
+Docker is installed in the Homelab server hosting the below containers
+
+===== OpenSpeedTest 
+
+Link to try: http://speedtest.jacobnotbiscuit.my/
+
+===== Oracle DB Server
+
+This is one of the DB Server used for both development and production. 
+
+===== Smart DNS pymumu/smartdns
+
+
+
