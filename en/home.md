@@ -2,7 +2,7 @@
 title: About Me
 description: This is Me. For simplicity, I will just put my resume first
 published: true
-date: 2026-01-10T06:40:14.448Z
+date: 2026-01-13T06:39:41.534Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-04T13:39:49.169Z
