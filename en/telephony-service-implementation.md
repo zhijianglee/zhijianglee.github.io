@@ -2,7 +2,7 @@
 title: Implementation of FreePBX using Time VOIP On Time Fibre
 description: 
 published: true
-date: 2026-01-12T06:17:54.579Z
+date: 2026-01-13T02:49:53.717Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T00:35:43.655Z
@@ -90,7 +90,7 @@ You should be able to make and receive calls now and play your custom on hold mu
 
 ## How I got it works on ODI DFP-34X-2C2
 
-First do <kbd>omcicli mib set 84</kbd>
+First do <kbd>omcicli mib get 84</kbd>
 
 `EntityID: 0x01
 FilterTbl[0]: PRI 0,CFI 0, VID 140
