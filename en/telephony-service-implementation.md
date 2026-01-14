@@ -2,7 +2,7 @@
 title: Implementation of FreePBX using Time VOIP On Time Fibre
 description: 
 published: true
-date: 2026-01-14T03:09:12.536Z
+date: 2026-01-14T03:12:03.763Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T00:35:43.655Z
@@ -86,7 +86,12 @@ No mention, leave it as default
 
 You should be able to make and receive calls now and play your custom on hold music. 
 
+## Some Troubleshooting Guide
 
+If you are facing issues, try set it up using 3cx softphone first, to ensure everything works. 
+
+- You can use Wireshark to capture SIP traffic that made from 3cx
+- Compare it with the SIP header from FreePBX (obtain it by using pjsip logger on after astriek -rvvv)
 
 
 ## How I got it works on ODI DFP-34X-2C2
