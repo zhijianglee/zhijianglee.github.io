@@ -2,6 +2,9 @@
 
 I subscribed to 600 Mbps Down and 500 Mbps Up internet packages that came with voip package, where I decided to put them into good use. What I meant by good use is ensure none of the items I am paying for are underutilized. My home lab consits a combinations of switch, routers, access points, refurbished computers and etc. Each of them plays their own role. 
 
+- You can check out relavant pictures here
+33 【工程师家就快成诈骗集团办公室啦 - 重生之我做个软件测试牛马 | 小红书 - 你的生活兴趣社区】 😆 cX9tM6r0SZ5Qfnf 😆 https://www.xiaohongshu.com/discovery/item/687d9efd0000000024009267?source=webshare&xhsshare=pc_web&xsec_token=AB17IIpcYXwJzTe-6Bn4MnEdq_08Pyf68i3mV6JePEV-8=&xsec_source=pc_share
+
 == Internet Services
 
 > Service Provider: Time Internet
