@@ -2,7 +2,7 @@
 title: Implementation of FreePBX using Time VOIP On Time Fibre
 description: 
 published: true
-date: 2026-01-13T02:49:53.717Z
+date: 2026-01-14T03:09:12.536Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T00:35:43.655Z
@@ -47,6 +47,7 @@ Configure the IP Addr by copying exactly from your Huawei ONU. That includes IP,
 - Configure DSTNAT to that router interface (If you are using router)
 - You need to route this IP 210.19.57.250 by forcing it to go through that said interface
 - Add routing for entire 10.88.X.X by forcing it to go through that interface as well. 
+- Add routing for 172.16.1.0/24 to that interface as well
 
 
 7. Testing before proceeding.
