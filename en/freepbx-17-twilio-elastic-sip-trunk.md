@@ -2,13 +2,17 @@
 title: Setting Up Twilio Elastic SIP Trunk in FreePBX
 description: Simple Guide on Setting Up Elastic SIP Trunk in FreePBX
 published: true
-date: 2026-01-15T13:02:48.691Z
+date: 2026-01-15T13:04:45.867Z
 tags: twilio, freepbx, siptrunk
 editor: markdown
 dateCreated: 2026-01-06T12:35:45.797Z
 ---
 
- It seems my ISP Time has discontinued it's Time Voice App for some time hence it's public network routable SIP IP Address is no longer working since December 2025. The only option is by using ISP provided ONU router which consists of 1 POTS. The VOIP is on separate VLAN and is not public routable. I did attempt to do VLAN tagging like how I did for Unifi, but it does not work for Time. I guess Time has it's own ACL in place. Since then, I was researching on platform that allow me to subscribe for Malaysia DID and Twilio is one of them. 
+ It seems my ISP Time has discontinued it's Time Voice App for some time hence it's public network routable SIP IP Address is no longer working since December 2025. The only option is by using ISP provided ONU router which consists of 1 POTS. The VOIP is on separate VLAN and is not public routable. ~~I did attempt to do VLAN tagging like how I did for Unifi, but it does not work for Time. I guess Time has it's own ACL in place~~. Since then, I was researching on platform that allow me to subscribe for Malaysia DID and Twilio is one of them. 
+ 
+>  Managed to setup VOIP on Time via VLAN. Guide is available. 
+{.is-success}
+
 
 Earlier this year, I topped up my Twilio account with USD 20 to upgrade my account from trial account and bought a Malaysian DID USD 4.99 per month. I will be trying out for a few months to see how it goes, if it worth renewing later by topping up my account again. Here's the catch, the DID doesn't comes with unlimited minutes although you forwarded to VOIP/SIP. I might consider looking for alternatives like Call Centric which slightly higher monthly fees but with unlimited incoming minutes. 
 
