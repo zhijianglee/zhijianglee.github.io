@@ -2,7 +2,7 @@
 title: Ditch ONU and Replace with XPON SFP Stick
 description: 
 published: true
-date: 2026-01-15T13:01:09.872Z
+date: 2026-01-15T13:01:20.962Z
 tags: gpon sfp stick, ditch onu, sfp+, gpon, onu
 editor: markdown
 dateCreated: 2026-01-12T13:39:42.226Z
