@@ -2,7 +2,7 @@
 title: Ditch ONU and Replace with XPON SFP Stick
 description: 
 published: true
-date: 2026-01-16T15:22:56.558Z
+date: 2026-01-16T15:24:29.078Z
 tags: gpon sfp stick, ditch onu, sfp+, gpon, onu
 editor: markdown
 dateCreated: 2026-01-12T13:39:42.226Z
@@ -96,7 +96,7 @@ Check if you receive table like above. If YES, you are good to go
 
 ## Router Configuration
 
-1.  Torch the SFP interface. Check if you are able to see 8864 (PPOE) Under VLAN499. If YES, you are good to go. Otherwise, you will need to do trial and error trying to pass the VLAN tagging  by using `omcicli mib set 84 0x01 FwdOp 0x02 `
+1.  Torch the SFP interface. Check if you are able to see 8864 (PPOE) Under VLAN499. If YES, you are good to go. Otherwise, you will need to do trial and error trying to pass the VLAN tagging  by using `omcicli mib set 84 0x01 FwdOp 0x02 `. The same command is to get VOIP VLAN forwarded to SFP interface in Mikrotik
 2.  The above is just an example. You may refer [here](https://wiki-archive.opencord.org/attachments/1966449/2557137.pdf) for more details. From the example 0x01 refers to EntityID you retrieved from get 0x02 refers to forward operation.
 3.  If unable to see VLAN details, you can try different OMCC*VER by using flash set OMCC\_VER XXX*
 4.  For Time dot Com, you might need to do additional steps. Please read “Implementation of FreePBX” scroll to the bottom for the key.
