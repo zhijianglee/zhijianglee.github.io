@@ -2,7 +2,7 @@
 title: Ditch ONU and Replace with XPON SFP Stick
 description: 
 published: true
-date: 2026-01-16T15:22:10.572Z
+date: 2026-01-16T15:22:56.558Z
 tags: gpon sfp stick, ditch onu, sfp+, gpon, onu
 editor: markdown
 dateCreated: 2026-01-12T13:39:42.226Z
@@ -21,7 +21,7 @@ I trust that this is the most transparent guide out there. That Malaysian topic 
 ## Pre-Requisites
 
 1.  Obtain your PPOE password from selfcare portal because this will be your POLAM password
-2.  Obtain device information from your existing Huawei ONT / ONU. (Login via telecomadmin. The default password is TIME(4 digit last MAC) without ().
+2.  Obtain device information from your existing Huawei ONT / ONU. (Login via telecomadmin. The default password is TIME(4 digit last MAC) without (). You asked this on lowyat forum, you will get reported
 
 ## Configuring the stick
 
