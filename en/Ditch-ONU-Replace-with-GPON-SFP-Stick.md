@@ -2,7 +2,7 @@
 title: Ditch ONU and Replace with XPON SFP Stick
 description: 
 published: true
-date: 2026-01-15T13:01:20.962Z
+date: 2026-01-16T15:22:10.572Z
 tags: gpon sfp stick, ditch onu, sfp+, gpon, onu
 editor: markdown
 dateCreated: 2026-01-12T13:39:42.226Z
@@ -14,7 +14,7 @@ I believe that he was the one that figured this out and started this trend. He e
 
 The following will be a documentation on how I managed to setup on Time dot Com using ODI DFP-34X-2C2 with Mikrotik RB5009. These steps are combination from variety of online resources. Although I had successful attempt implementing it on Unifi during 2020, this guide will be focus on how I got both Internet and VOIP working on Time dot Com. Before I begin, I want to be upfront that this was not endorsed by any ISP nor is official guide by ISP. 
 
-> GPON is a shared network. Any incorrect steps might break the network and cause inconveniences to your neighbor and will trigger alarm at OLT side. They might/block the SN you used. If you used your existing ONU serial, then if they blocked that SN, you will not be able to authenticate again even though you switched back the ONU. There might be site visit charges, and you will be forced to use only the default devices moving forward. I mean really force and ask you to take down your Home Lab Set Up by resetting every username and password and will not provide it to you. ISPs here in Malaysia is not a home lab and DIY friendly even though you did not break anything. They just doesn't like you did not use the default way. Some escalations are needed to get everything back in order
+> GPON is a shared network. Any incorrect steps might break the network and cause inconveniences to your neighbor and will trigger alarm at OLT side. They might/block the SN you used. If you used your existing ONU serial, then if they blocked that SN, you will not be able to authenticate again even though you switched back the ONU. There might be site visit charges, and you will be forced to use only the default devices moving forward (even own router also not allowed). I mean really force and ask you to take down your Home Lab Set Up by resetting every username and password and will not provide it to you. ISPs here in Malaysia is not a home lab and DIY friendly even though you did not break anything. They just doesn't like you did not use the default way. Some escalations are needed to get everything back in order
 
 I trust that this is the most transparent guide out there. That Malaysian topic starter forum member no longer provide goodwill support to troubleshoot technical related issues on custom / self bought GPON stick because according to him ONU stick is technically illegal in Malaysia and he received instructions from ISP (Unifi aka Telekom Malaysia is one of them) not to provide anymore support that will promote the increase of custom PON stick. 
 
