@@ -2,7 +2,7 @@
 title: About Me
 description: This is Me. For simplicity, I will just put my resume first
 published: true
-date: 2026-01-13T06:39:41.534Z
+date: 2026-03-18T14:31:00.475Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-04T13:39:49.169Z
@@ -27,6 +27,9 @@ An ambitious and customer-centered Senior Test Automation Engineer with strong i
 **Swift**  
 *September 2025 – Present*
 
+- Involved in UIPath to Power Automate Migration for sanctions related monitoring
+- In house sanction management related products testing
+
 ### **Automation Developer and Analyst**  
 **Standard Chartered GBS**  
 *April 2022 – September 2025*
@@ -41,6 +44,7 @@ An ambitious and customer-centered Senior Test Automation Engineer with strong i
 - Built an in-house FIX simulator using Python socket programming — reduced dependency on third-party support and successfully demonstrated the design and logic to team members.
 - Promoted agile practices, such as using Gherkin for requirements, estimating with story points, and proper JIRA usage.
 - Mentored peers in test automation setup and onboarding.
+- Involved in pre and post data centre migration QA related activities. 
 
 **Technology Stacks Used:** Java Spring Boot, Flask, Cucumber, Selenium, Pytest, Oracle SQL, RHEL
 
