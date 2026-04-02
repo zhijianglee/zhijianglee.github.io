@@ -2,7 +2,7 @@
 title: Implementation of FreePBX using Time VOIP On Time Fibre
 description: 
 published: true
-date: 2026-01-14T03:12:03.763Z
+date: 2026-04-02T11:53:13.890Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T00:35:43.655Z
@@ -68,8 +68,9 @@ Username: Your Time 03XXXX
 Authusername and Password: Refer back to your downloaded XML Config
 
 **Under Advanced Tab**
-OutboudProxy: Begin with sip:10.88.31.68 (Or follow back the one in your ONU)
+OutboudProxy: leave empty
 Contact User: leave empty
+Contact User: 03XXXXXXXX
 From User: 0XXXXXXXXX
 
 Client URI:sip:03XXXXXXXX@10.88.31.68
@@ -79,7 +80,8 @@ Trust RPID/PAI: YES
 Send RPID/PAI: BOTH
 Inband Progress : YES
 Direct Media :YES
-REWRITE CONTACT: NO
+REWRITE CONTACT: YES
+AOR Contact: sip:03XXXXXXXX@10.88.31.68
 
 No mention, leave it as default
 
