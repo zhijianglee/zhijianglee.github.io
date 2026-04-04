@@ -2,14 +2,14 @@
 title: About Me
 description: This is Me. For simplicity, I will just put my resume first
 published: true
-date: 2026-03-18T14:31:00.475Z
+date: 2026-04-04T02:27:46.914Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-04T13:39:49.169Z
 ---
 
 # Zhi Jiang Lee  
-📞 +60358713988
+
 📧 [leezhijiang@outlook.com](mailto:leezhijiang@outlook.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/zhi-jiang-lee-b5777537/)
 
