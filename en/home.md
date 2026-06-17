@@ -2,7 +2,7 @@
 title: Hi There
 description: 
 published: true
-date: 2026-01-13T06:43:21.977Z
+date: 2026-06-17T23:57:40.854Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-13T06:43:21.977Z
@@ -92,16 +92,9 @@ Each section is organized by **topic first**, not by tool or vendor.
 
 ---
 
-## 🚧 Work in Progress
+## 🚧 What I can offer
 
-This wiki is constantly evolving.  
-Some pages may be incomplete, outdated, or contradictory — that’s expected.
-
-Feel free to:
-- Add notes
-- Correct mistakes
-- Improve explanations
-- Remove obsolete content
+I am an experienced IT professional in QA / testing whatever you called it. 
 
 ---
 
