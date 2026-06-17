@@ -2,7 +2,7 @@
 title: About Me
 description: This is Me. For simplicity, I will just put my resume first
 published: true
-date: 2026-04-04T02:27:46.914Z
+date: 2026-06-17T23:54:12.496Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-04T13:39:49.169Z
@@ -25,7 +25,7 @@ An ambitious and customer-centered Senior Test Automation Engineer with strong i
 
 ### **Senior Test Automation Engineer**  
 **Swift**  
-*September 2025 – Present*
+*September 2025 – June 2026*
 
 - Involved in UIPath to Power Automate Migration for sanctions related monitoring
 - In house sanction management related products testing
