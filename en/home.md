@@ -2,13 +2,13 @@
 title: Hi There
 description: 
 published: true
-date: 2026-06-18T00:02:46.315Z
+date: 2026-06-18T00:04:12.957Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-13T06:43:21.977Z
 ---
 
-# 📘 Welcome to the Knowledge Base
+# 📘 Welcome to my site
 
 Welcome to the **Home Page** of this wiki.  
 This space serves as a central hub for documentation, notes, references, and random discoveries collected over time.
@@ -26,6 +26,19 @@ This wiki exists to:
 - Avoid solving the same problem twice
 
 It is a **living document** — incomplete, occasionally messy, but always improving.
+
+---
+
+## What I can offer
+
+I am an experienced IT professional in QA / testing whatever you called it. Open to offer consulation services on the below area
+
+- QA / Testing on web based applications and API. 
+- Migration from mannual testing to automation testing
+- General IT consulation for SME. (Shops, cafe, sall companies with less than 10 employees)
+
+I also experienced in dealing with beaurocracies. If you encounter less than ideal experience dealing with insurance claims, general complains, service providers issue, you can hit me up and I can "settle" things for you. 
+
 
 ---
 
@@ -92,18 +105,6 @@ Each section is organized by **topic first**, not by tool or vendor.
 
 ---
 
-## What I can offer
-
-I am an experienced IT professional in QA / testing whatever you called it. Open to offer consulation services on the below area
-
-- QA / Testing on web based applications and API. 
-- Migration from mannual testing to automation testing
-- General IT consulation for SME. (Shops, cafe, sall companies with less than 10 employees)
-
-I also experienced in dealing with beaurocracies. If you encounter less than ideal experience dealing with insurance claims, general complains, service providers issue, you can hit me up and I can "settle" things for you. 
-
-
----
 
 ## 🕒 Last Updated
 
