@@ -2,7 +2,7 @@
 title: Hi There
 description: 
 published: true
-date: 2026-06-18T00:00:23.003Z
+date: 2026-06-18T00:00:31.255Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-13T06:43:21.977Z
@@ -92,7 +92,7 @@ Each section is organized by **topic first**, not by tool or vendor.
 
 ---
 
-## 🚧 What I can offer
+## What I can offer
 
 I am an experienced IT professional in QA / testing whatever you called it. Open to offer consulation services on the below area
 
