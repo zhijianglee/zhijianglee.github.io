@@ -2,7 +2,7 @@
 title: Hi There
 description: 
 published: true
-date: 2026-06-18T00:00:31.255Z
+date: 2026-06-18T00:02:46.315Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-13T06:43:21.977Z
@@ -99,6 +99,9 @@ I am an experienced IT professional in QA / testing whatever you called it. Open
 - QA / Testing on web based applications and API. 
 - Migration from mannual testing to automation testing
 - General IT consulation for SME. (Shops, cafe, sall companies with less than 10 employees)
+
+I also experienced in dealing with beaurocracies. If you encounter less than ideal experience dealing with insurance claims, general complains, service providers issue, you can hit me up and I can "settle" things for you. 
+
 
 ---
 
