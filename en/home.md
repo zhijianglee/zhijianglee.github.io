@@ -2,7 +2,7 @@
 title: Hi There
 description: 
 published: true
-date: 2026-06-17T23:57:40.854Z
+date: 2026-06-18T00:00:23.003Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-13T06:43:21.977Z
@@ -94,7 +94,11 @@ Each section is organized by **topic first**, not by tool or vendor.
 
 ## 🚧 What I can offer
 
-I am an experienced IT professional in QA / testing whatever you called it. 
+I am an experienced IT professional in QA / testing whatever you called it. Open to offer consulation services on the below area
+
+- QA / Testing on web based applications and API. 
+- Migration from mannual testing to automation testing
+- General IT consulation for SME. (Shops, cafe, sall companies with less than 10 employees)
 
 ---
 
